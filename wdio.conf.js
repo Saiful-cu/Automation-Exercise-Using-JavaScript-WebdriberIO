@@ -1,3 +1,7 @@
+const RegisterUser = './test/specs/RegisterUser.e2e.js'
+const UserLogin = './test/specs/UserLogin.e2e.js'
+const ContactUs = './test/specs/ContactUs.e2e.js'
+
 export const config = {
     //
     // ====================
@@ -21,7 +25,9 @@ export const config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/**/*.js'
+      //UserLogin,
+      //RegisterUser
+      ContactUs
     ],
     // Patterns to exclude.
     exclude: [

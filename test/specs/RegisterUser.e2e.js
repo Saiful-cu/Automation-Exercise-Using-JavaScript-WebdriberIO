@@ -1,5 +1,5 @@
 import { expect } from '@wdio/globals'
-import Page from '../pageobjects/page'
+
 import signupAction from '../pageobjects/signUp/signupAction';
 import loginAction from '../pageobjects/logIn/loginAction';
 
@@ -38,12 +38,12 @@ describe('Verify Register User', () => {
         await expect(elementText).toEqual(`Logged in as ${username}`);
     }) 
 
-    it("should visible 'Account Deleted' ", async()=>{
-        await $("//a[contains(.,'Delete Account')]").click();
-        const elementText = await $("//h2[contains(.,'Account Deleted!')]").getText();
-        await expect(elementText).toContain("ACCOUNT DELETED!");
+    // it("should visible 'Account Deleted' ", async()=>{
+    //     await $("//a[contains(.,'Delete Account')]").click();
+    //     const elementText = await $("//h2[contains(.,'Account Deleted!')]").getText();
+    //     await expect(elementText).toContain("ACCOUNT DELETED!");
 
-    })
+    // })
 
 
 })

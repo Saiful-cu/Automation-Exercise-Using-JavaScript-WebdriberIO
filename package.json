@@ -1,6 +1,7 @@
 {
   "name": "automation-exercise",
   "type": "module",
+  
   "devDependencies": {
     "@wdio/allure-reporter": "^9.2.14",
     "@wdio/cli": "^9.2.14",
